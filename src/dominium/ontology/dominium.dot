@@ -1,0 +1,29 @@
+digraph dominium {
+	node [label="\N"];
+	graph [bb="0,0,745,372"];
+	Temporary [label=Temporary, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="40,160", width="1.06", height="0.50"];
+	NoticesToMariners [label=NoticesToMariners, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="213,266", width="1.72", height="0.50"];
+	Preliminary [label=Preliminary, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="136,160", width="1.11", height="0.50"];
+	Permanent [label=Permanent, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="232,160", width="1.06", height="0.50"];
+	SpecialRegion [label=SpecialRegion, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="369,354", width="1.33", height="0.50"];
+	RoughSea [label=RoughSea, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="340,160", width="1.03", height="0.50"];
+	WeatherNotices [label=WeatherNotices, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="369,266", width="1.47", height="0.50"];
+	SearchAndRescue [label=SearchAndRescue, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="571,266", width="1.64", height="0.50"];
+	camposPetroleumArea [label="{camposPetroleumArea|{has_data =|{Prohibition_Navigate}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="106,36", rects="0,36,213,60 0,12,78,36 78,12,213,36", width="2.94", height="0.67"];
+	lowVisibility [label="{lowVisibility|{has_data =|{Obligation_Max_Speed_2}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="588,36", rects="468,36,708,60 468,12,546,36 546,12,708,36", width="3.33", height="0.67"];
+	LowVisibility [label=LowVisibility, shape=box, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="441,160", width="1.28", height="0.50"];
+	roughSea [label="{roughSea|{has_data =|{Prohibition_Navigate2|SeaState12}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="340,36", rects="230,48,450,72 230,0,308,48 308,24,450,48 308,0,450,24", width="3.06", height="1.00"];
+	sar [label="{sar|{has_data =|{Obligation_Max_Speed_2|MOB1200Z25OUT}}}", shape=record, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="625,160", rects="505,172,745,196 505,124,583,172 583,148,745,172 583,124,745,148", width="3.33", height="1.00"];
+	NoticesToMariners -> Temporary [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,178,248 169,243 144,230 114,213 87,196 79,190 70,184 62,178", lp="154,222"];
+	NoticesToMariners -> Preliminary [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,200,248 194,240 180,220 162,195 149,178", lp="195,222"];
+	NoticesToMariners -> Permanent [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,216,248 218,238 222,219 226,195 229,178", lp="231,222"];
+	SpecialRegion -> NoticesToMariners [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,337,336 328,331 302,316 269,297 245,284", lp="315,310"];
+	WeatherNotices -> RoughSea [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,364,248 361,238 356,219 349,195 345,178", lp="368,222"];
+	SpecialRegion -> WeatherNotices [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,369,336 369,326 369,312 369,296 369,284", lp="377,310"];
+	SpecialRegion -> SearchAndRescue [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,410,336 419,332 453,317 497,298 529,284", lp="491,310"];
+	Permanent -> camposPetroleumArea [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,214,142 207,135 184,113 152,81 130,60", lp="184,98"];
+	LowVisibility -> lowVisibility [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,462,142 470,135 496,114 534,82 559,60", lp="531,98"];
+	RoughSea -> roughSea [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,340,142 340,132 340,114 340,91 340,72", lp="346,98"];
+	WeatherNotices -> LowVisibility [dir=back, label=isa, color="0.0,0.0,0.0", fontcolor="0.0,0.0,0.0", pos="s,382,248 388,240 400,220 417,195 429,178", lp="412,222"];
+	SearchAndRescue -> sar [dir=back, label=io, color="0.0,1.0,1.0", fontcolor="0.0,1.0,1.0", pos="s,580,248 585,239 591,226 600,210 607,196", lp="603,222"];
+}

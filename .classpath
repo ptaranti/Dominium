@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/libs_jade/commons-codec/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/antlr-2.7.5.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/arq.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/arq-extra.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/concurrent.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/icu4j_3_4.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/iri.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/jena.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/jenatest.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/json.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/junit.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/log4j-1.2.12.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/lucene-core-2.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/stax-api-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/wstx-asl-3.0.0.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jena/xml-apis.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jts/acme.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jts/jdom.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jts/JTS_Test.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jts/jts-1.8.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jts/jtsio-1.8.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jts/junit.jar"/>
+	<classpathentry kind="lib" path="lib/libs_jts/xerces.jar"/>
+	<classpathentry kind="lib" path="lib/libs_postgis/postgresql-8.2-505.jdbc4.jar"/>
+	<classpathentry kind="lib" path="lib/libs_postgis/postgis.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

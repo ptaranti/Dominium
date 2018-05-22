@@ -1,0 +1,5 @@
+Personalizar as classes abaixo:
+
+PlatDominiumOntology.java
+
+redefinir a ontogia para o State adequado ao dominio da aplicação.
